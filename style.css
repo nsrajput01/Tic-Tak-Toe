@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:  gainsboro;
+    text-align: center;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.container{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 0.3rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+    font-size: 8vmin;
+    color: black;
+    background-color: #ffffff;
+}
+
+.box:hover{
+    background-color: ghostwhite;
+}
+
+#reset, #new-btn, #clear{
+            background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8  51%, #757F9A  100%);
+            
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: black;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+    border: none;
+         
+}
+
+#reset:hover, #new-btn:hover, #clear:hover{
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          
+}
+
+#msg{
+    color: darkblue;
+    font-size: 10vmin;
+}
+
+.msg-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hide{
+    display: none;
+}
+
+/* Scorecard styles */
+.scorecard {
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: darkblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.scorecard p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.scorecard span {
+    color: darkred;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .box {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-mode .game {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode #reset, 
+.dark-mode #new-btn, 
+.dark-mode #clear,
+.dark-mode #dark-mode-toggle{
+    background-image: linear-gradient(to right, #555555, #999999);
+    color: white;
+}
+.dark-mode #msg{
+    color: white;
+}
+
+.dark-mode #reset:hover, 
+.dark-mode #new-btn:hover, 
+.dark-mode #clear:hover, 
+.dark-mode #dark-mode-toggle:hover {
+    background-image: linear-gradient(to right, #999999, #555555);
+}
+
+
+#dark-mode-toggle {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    background-image: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.08);
+    margin: 10px;
+    display: block;
+}
+
+#dark-mode-toggle:hover {
+    background-image: linear-gradient(to right, #2a5298, #1e3c72);
+}
